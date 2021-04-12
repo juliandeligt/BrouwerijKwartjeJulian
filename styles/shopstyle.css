@@ -1,0 +1,346 @@
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+@font-face {
+  font-family: "Nexa";
+  src: url("../fonts/Nexa/NexaLight.otf") format("otf"),
+    url("../fonts/Nexa/NexaBold.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url("../fonts/Kumbhsans/KumbhSans-Regular.ttf") format("otf");
+}
+
+/* globals shop */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f1f1;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p,
+li,
+a,
+button {
+  font-size: 2.5rem;
+  color: black;
+}
+
+li,
+a,
+button {
+  list-style: none;
+  text-decoration: none;
+  border: none;
+}
+
+/*navigatie shop*/
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  background: #000000;
+  height: 10vh;
+  padding: 1.5rem;
+  position: relative;
+}
+nav {
+  margin: auto;
+  z-index: 1;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex: 1 1 85rem;
+}
+
+nav a:hover {
+  color: #f2b714;
+  font-size: 35px;
+  transition: all 0.3s ease;
+}
+
+.logo {
+  cursor: pointer;
+  flex: 1 1 40rem;
+}
+
+.logo img {
+  width: 12%;
+}
+
+/* Banner bovenaan de pagina van de shop*/
+.hero {
+  width: 100%;
+  background: url("../images/shopbanner.png");
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+/* filters banner */
+.bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar-filters {
+  background: white;
+  width: 100%;
+  height: 5vh;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.filters li {
+  flex: 1 1 5rem;
+}
+
+.filter-arrow {
+  width: 5%;
+  margin-left: 2rem;
+}
+
+/* De artikelen die in de verkoop zijn */
+.menu-boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  height: 110vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "blok1 blok2 blok3 blok4"
+    "blok5 blok6 blok7 blok8"
+    "blok9 blok10 blok11 blok12";
+  grid-gap: 3.5rem;
+  color: white;
+  text-align: center;
+}
+
+.menu-boxes h2 {
+  font-size: 2rem;
+}
+
+.menu-boxes p {
+  font-size: 1.6rem;
+}
+
+nav li,
+a {
+  color: white;
+}
+
+/* de blokken waarin de artikelen staan */
+.blok1 {
+  grid-area: blok1;
+  width: 32.2rem;
+  height: 46.5vh;
+  border: 0.1rem solid #707070;
+  color: black;
+  margin-top: 5rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem grey;
+}
+
+.blok2 {
+  grid-area: blok2;
+  width: 32.2rem;
+  height: 46.5vh;
+  border: 0.1rem solid #707070;
+  color: black;
+  margin-top: 5rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem grey;
+}
+
+.blok3 {
+  grid-area: blok3;
+  width: 32.2rem;
+  height: 46.5vh;
+  border: 0.1rem solid #707070;
+  color: black;
+  margin-top: 5rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem grey;
+}
+
+.blok4 {
+  grid-area: blok4;
+  width: 32.2rem;
+  height: 46.5vh;
+  border: 0.1rem solid #707070;
+  color: black;
+  margin-top: 5rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem grey;
+}
+
+.blok5 {
+  grid-area: blok5;
+  width: 32.2rem;
+  height: 46.5vh;
+  border: 0.1rem solid #707070;
+  color: black;
+  margin-top: 5rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem grey;
+}
+
+.blok6 {
+  grid-area: blok6;
+  width: 32.2rem;
+  height: 46.5vh;
+  border: 0.1rem solid #707070;
+  color: black;
+  margin-top: 5rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem grey;
+}
+
+.blok7 {
+  grid-area: blok7;
+  width: 32.2rem;
+  height: 46.5vh;
+  border: 0.1rem solid #707070;
+  color: black;
+  margin-top: 5rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem grey;
+}
+
+.blok8 {
+  grid-area: blok8;
+  width: 32.2rem;
+  height: 46.5vh;
+  border: 0.1rem solid #707070;
+  color: black;
+  margin-top: 5rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem grey;
+}
+
+.blok9 {
+  grid-area: blok9;
+  width: 32.2rem;
+  height: 46.5vh;
+  border: 0.1rem solid #707070;
+  color: black;
+  margin-top: 5rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem grey;
+}
+
+.blok10 {
+  grid-area: blok10;
+  width: 32.2rem;
+  height: 46.5vh;
+  border: 0.1rem solid #707070;
+  color: black;
+  margin-top: 5rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem grey;
+}
+
+.blok11 {
+  grid-area: blok11;
+  width: 32.2rem;
+  height: 46.5vh;
+  border: 0.1rem solid #707070;
+  color: black;
+  margin-top: 5rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem grey;
+}
+
+.blok12 {
+  grid-area: blok12;
+  width: 32.2rem;
+  height: 46.5vh;
+  border: 0.1rem solid #707070;
+  color: black;
+  margin-top: 5rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem grey;
+}
+
+/* de knop die linkt naar het desbetreffende artikel */
+button {
+  border: 0.2rem solid #ac0d0d;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  height: 2.8rem;
+  background-color: transparent;
+  width: 12rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 0.2rem solid #ac0d0d;
+  color: white;
+  background-color: #ac0d0d;
+  transition: all 0.3s ease;
+}
+
+/* footer van de shop*/
+.footer {
+  padding-top: 1.5rem;
+  padding-left: 150rem;
+  margin-top: 60rem;
+  width: 100%;
+  height: 6vh;
+  background-color: black;
+  position: relative;
+}
+
+.footer p {
+  font-size: 2rem;
+  margin-top: -5rem;
+  color: #9e9e9e;
+}
+
+/* social media icoontjes in de footer */
+.socialmedia {
+  margin-top: -1rem;
+  margin-left: -144rem;
+}
+
+

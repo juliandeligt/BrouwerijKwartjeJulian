@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brouwerij Kwartje | Shop | bezorggegevens</title>
+    <link rel="icon" href="icons/logo.svg" />
+    <link rel="stylesheet" href="styles/bezorggegevens.css" />
+  </head>
+  <header>
+    <nav>
+        <div class="logo"><a href="index.html"><img src="icons/witlogo.png" alt="logo" ></a></div>
+          <ul>
+            <li><a href="#">Bierinfo</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="#evenementen">Evenementen</a></li>
+            <li><a href="#overons">Over ons</a></li>
+            <li><a href="#contactgegevens">Contact</a></li>
+          </ul>
+        </nav>
+  </header>
+
+  <body>
+
+    <!--Invulformulier (Dus bezorggegevens en verzendmethodes)-->
+    <div class="bezorgformulier">
+        <h2>Bezorggegevens</h2>
+   
+        <!--Bezorggegevens-->
+    <div class="bezorggegevens">
+        <form method="post" action="mailto:juliandeligt@hotmail.nl">
+
+        <!--Om aan te geven wat precies in 1 rij moet staan in het formulier-->
+        <div class="formrow">
+          <!--Voornaam-->
+      <div class="formvoornaam">
+        <label for="voornaam">Voornaam:*</label>
+        <input id="voornaam" type="text" name="voornaam" placeholder="bijv. Pieter" required>
+      </div>
+
+      <!--tussenvoegsel-->
+      <div class="formtussenvoegsel">
+        <label for="tussenvoegsel">tussenvoegsel:</label>
+        <input id="tussenvoegsel" type="text" name="tussenvoegsel" required>
+      </div>
+
+      <!--Achternaam-->
+      <div class="formachternaam">
+        <label for="achternaam">Achternaam:*</label>
+        <input id="achternaam" type="text" name="achternaam" placeholder="bijv. Groeneweg" required>
+      </div>
+      </div>
+
+        <div class="formrow">
+      <!--land-->
+          <div class="formland">
+        <label for="land">Land:*</label>
+        <input id="land" type="text" name="land" placeholder="bijv. Nederland" required>
+          </div>
+        </div>
+
+        <div class="formrow">
+      <!--straat-->    
+          <div class="formstraat">
+        <label for="straat">Straat:*</label>
+        <input id="straat" type="text" name="straat" placeholder="bijv. Groeneweg" required>
+          </div>
+
+      <!--huisnummer-->
+          <div class="formhuisnummer">
+        <label for="huisnummer">Huisnummer:*</label>
+        <input id="huisnummer" type="number" name="huisnummer" min="0" required>
+        </div>
+        
+      <!--huisnummer toevoeging-->  
+          <div class="formtoevoeging">
+        <label for="toevoeging">Toevoeging:</label>
+        <input id="toevoeging" type="text" name="toevoeging">
+        </div>
+        </div>
+
+        <div class="formrow">
+      <!--postcode-->
+        <div class="formpostcode">
+        <label for="postcode">Postcode:*</label>
+        <input id="postcode" type="text" name="text" placeholder="1234AB" required>
+        </div>
+        </div>
+
+        <div class="formrow">
+      <!--email-->
+        <div class="formemail">
+        <label for="email">E-mailadres:*</label>
+        <input id="email" type="text" name="text" placeholder="iemand@hotmail.com" required>
+      </div>
+      </div>
+    </div>
+    
+            <br><br>
+
+        <!--Stukje "verzendcodes"-->    
+        <h2>Verzendmethodes</h2>
+
+        <!--keuze tussen laten bezorgen en ophalen-->
+        <div class="verzendmethodes">
+        <label for="opt1"><input id="opt1" type="radio" name="mw" value="1">Thuisbezorging (+ €3,00,- verzendkosten)</label>
+        <br><br>
+        <label for="opt2"><input id="opt2" type="radio" name="mw" value="2">Afhalen bij Brouwerij Kwartje</label>
+        </div>
+        <br><br>
+        <br><br>
+
+        <!--verzenden-->
+        <div class="verzendknop">
+            <button type="submit">Bestellen <img src="../icons/pijltje.png" alt="pijltje"></button>
+              </button>
+        </div>
+            </form>
+
+    </div>
+
+    <!--footer-->
+    <footer class="footerartikel">
+     
+    <!--sociale media icoontjes-->  
+      <div class="socialmedia">
+  
+        <a href="https://nl.linkedin.com/">
+      <img src="../icons/linkedinwit.png" alt="linkedin"> </a>
+  
+        <a href="https://www.instagram.com/brouwerijkwartje/">
+      <img src="../icons/instawit.png" alt="insta"> </a>
+  
+        <a href="https://www.snapchat.com/l/nl-nl/">
+      <img src="../icons/snapchatwit.png" alt="snap"> </a>
+  
+        <a href="https://twitter.com/">
+      <img src="../icons/twitterwit.png" alt="twitter"> </a>
+  
+        <a href="https://www.facebook.com/BrouwerijKwartje/">
+      <img src="../icons/facebookwit.png" alt="facebook"> </a>
+  
+    </div>
+      <p>© Brouwerij Kwartje all rights reserved.</p>
+    </footer>
+
+  </body>
+
+  </html>

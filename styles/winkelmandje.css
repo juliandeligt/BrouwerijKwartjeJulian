@@ -1,0 +1,277 @@
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+@font-face {
+  font-family: "Nexa";
+  src: url("../fonts/Nexa/NexaLight.otf") format("otf"),
+    url("../fonts/Nexa/NexaBold.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url("../fonts/Kumbhsans/KumbhSans-Regular.ttf") format("otf");
+}
+
+/* globals shop */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f1f1;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p,
+li,
+a,
+button {
+  font-size: 2.5rem;
+  color: black;
+}
+
+li,
+a,
+button {
+  list-style: none;
+  text-decoration: none;
+  border: none;
+}
+
+/*navigatie shop*/
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  background: #000000;
+  height: 10vh;
+  padding: 1.5rem;
+  position: relative;
+}
+
+nav {
+  margin: auto;
+  z-index: 1;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex: 1 1 85rem;
+}
+
+nav a:hover {
+  color: #f2b714;
+  font-size: 35px;
+  transition: all 0.3s ease;
+}
+
+nav li,
+a {
+  color: white;
+}
+
+.logo {
+  cursor: pointer;
+  flex: 1 1 40rem;
+}
+
+.logo img {
+  width: 12%;
+}
+
+/* Gedeelte van de 2 producten */
+.bovenkantmandje {
+    margin: 6rem 26rem;
+}
+  
+  /* lijnen in winkelwagen */
+  .lijn1 {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0rem;
+}
+  
+  .lijn2 {
+    margin: 0rem 105rem;
+    padding-top: 7.5rem;
+}
+  
+  /* de 2 weergegeven producten */
+  .product1,
+  .product2 {
+    display: flex;
+    margin: 0rem 15rem;
+  }
+  
+  /* plaatjes van bestelde producten */
+  .product1plaatje {
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    height: 26vh;
+    width: 25rem;
+    display: flex;
+    margin: 0.3rem 0rem -1.5rem 11rem;
+    border: 0.1rem solid black;
+  }
+  
+  .product1info {
+    margin: 6rem 2rem;
+  }
+  
+  /* het stukje waarin je het aantal kan aanpassen */
+  .aantal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 1rem;
+    width: 2rem;
+    font-size: 2rem;
+    font-family: "Nexa", sans-serif;
+  }
+  
+  legend {
+    font-family: "Nexa", sans-serif;
+    font-size: 2rem;
+  }
+  
+  input {
+    width: 5rem;
+  }
+  
+  /* prijs naast "aantal" vakjes */
+  .prijsproduct {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .prijsproduct h2 {
+    font-size: 2rem;
+  }
+  
+  /* de totaal te betalen prijs */
+  .totaleprijs {
+    display: flex;
+    margin: 0rem 115rem;
+    gap: 33rem;
+  }
+  
+  .totaleprijs h1 {
+    font-family: "Nexa", sans-serif;
+    font-size: 2rem;
+    margin: 1rem -5rem;
+  }
+  
+  .totaleprijs h2 {
+    font-family: "poppins";
+    font-size: 2rem;
+    margin: 1rem 0rem;
+  }
+  
+  /* knop van de pagina's "winkelmandje" en bezorgformulier */
+  .wittebalkwinkelmandje button:hover {
+    background-color: #f2b714;
+    color: black;
+    border: 2px solid #f2b714;
+  }
+
+  /* de knop die linkt naar het desbetreffende artikel */
+button {
+    border: 0.2rem solid #ac0d0d;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    height: 2.8rem;
+    background-color: transparent;
+    width: 12rem;
+    border-radius: 2rem;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    border: 0.2rem solid #ac0d0d;
+    color: white;
+    background-color: #ac0d0d;
+    transition: all 0.3s ease;
+  }
+
+  /* knoppen */
+  .wittebalkwinkelmandje {
+    background-color: white;
+    height: 25vh;
+    width: 100%;
+    margin: 5rem 0rem;
+    box-shadow: 0.1rem 0.1rem 0.5rem grey;
+  }
+  
+  .wittebalkwinkelmandje button {
+    border: 0.2rem solid #f2b714;
+    border-radius: 0px;
+    width: 16rem;
+    height: 4vh;
+    display: grid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 144rem;
+    gap: 4rem;
+    font-weight: bold;
+  }
+
+/* footer */
+.footerartikel {
+    margin-top: 15rem;
+    padding-top: 1.5rem;
+    padding-left: 150rem;
+    width: 100%;
+    height: 6vh;
+    background-color: black;
+    position: relative;
+  }
+  
+  .footerartikel p {
+    font-size: 2rem;
+    margin: -5rem 0rem;
+    color: #9e9e9e;
+  }
+
+ /* social media icoontjes in de footer */
+.socialmedia {
+  margin-top: -1rem;
+  margin-left: -144rem;
+}

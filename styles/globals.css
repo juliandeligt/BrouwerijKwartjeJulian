@@ -1,0 +1,43 @@
+/* globals shop */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #080808;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p,
+li,
+a,
+button {
+  font-size: 2.5rem;
+  color: black;
+}
+
+li,
+a,
+button {
+  list-style: none;
+  text-decoration: none;
+  border: none;
+}

@@ -1,0 +1,18 @@
+/*Import css bestanden*/
+@import "globals.css";
+@import "navigation-footer.css";
+@import "home.css";
+
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+@font-face {
+  font-family: "Nexa";
+  src: url("../fonts/Nexa/NexaLight.otf") format("otf"),
+    url("../fonts/Nexa/NexaBold.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url("../fonts/Kumbhsans/KumbhSans-Regular.ttf") format("otf");
+}
